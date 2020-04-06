@@ -1,0 +1,317 @@
+:root {
+  --sizing-16: 1rem;
+  --sizing-32: 2rem;
+  --color__placeholder: #f69e47;
+  --color__black: #222;
+  --color__white: #fff;
+  --color__sauce-1__1: #f69e47;
+  --color__sauce-1__2: #ed6d2e;
+  --color__sauce-2__1: #fa6429;
+  --color__sauce-2__2: #fb4015;
+  --color__sauce-3__1: #f63e1c;
+  --color__sauce-3__2: #d01c0b;
+  --color__sauce-4__1: #090901;
+  --color__sauce-4__2: #5d0708;
+  --color__sauce-5__1: #0ece4b;
+  --color__sauce-5__2: #2438d0;
+  --font__handwritten: 'Amatic SC', cursive;
+  --font__display: 'Oswald', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: var(--color__black);
+  color: var(--color__white);
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--font__handwritten);
+}
+
+p {
+  margin: 0;
+  line-height: 1.25;
+}
+
+a {
+  color: var(--color__white);
+}
+
+.element-space {
+  margin-bottom: var(--sizing-16);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.content-wrapper {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sauce-packet {
+  border: solid 5px var(--color__black);
+  background: var(--color__placeholder);
+  padding-top: 161.8%;
+  text-align: center;
+  position: relative;
+  color: var(--color__black);
+  margin-bottom: var(--sizing-16);
+}
+
+.sauce-packet:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0; 
+  background: url(../images/fire.svg);
+  background-position: center;
+  background-size: 55px;
+  z-index: 1;
+  opacity: 0.2;
+  background-position-y: 0px;
+  animation: background-slide 2s linear infinite;
+}
+
+@keyframes background-slide {
+  0%{
+    background-position-y: 0px;
+  }
+  100%{
+    background-position-y: 55px;
+  }
+}
+
+.sauce-packet__content-container {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0; 
+  padding: var(--sizing-32);
+  z-index: 2;
+}
+
+.sauce-packet__title {
+  color: var(--color__white);
+  font-size: 3rem;
+  font-family: var(--font__display);
+  text-transform: uppercase;
+  margin: 0 0 var(--sizing-32);
+}
+
+.sauce-packet__message-wrapper {
+  position: relative;
+  height: 42%;
+  width: 100%;
+  /* background: url(../images/label.svg); */
+  /* background-color: var(--color__white); */
+  font-family: var(--font__handwritten);
+  font-size: var(--sizing-32);
+  text-align: center;
+  display: table;
+  line-height: 1;
+}
+
+.sauce-packet__message {
+  position: relative;
+  z-index: 2;
+  display: table-cell;
+  vertical-align: middle;
+  padding: var(--sizing-16);
+}
+
+.sauce-packet__message:focus {
+  /* border: solid 5px var(--color__sauce-1__2); */
+  outline: none;
+}
+
+.sauce-packet__message:focus ~ .sauce-packet-background {
+  stroke-width: 5px;
+  stroke: var(--color__sauce-1__2);
+}
+
+.sauce-packet-background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.sauce-packet-background path {
+  fill: var(--color__white);
+}
+
+.sauce-packet__ingredients {
+  position: absolute;
+  text-align: left;
+  padding: var(--sizing-32);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sauce-packet--sauce-1 {
+  background: var(--color__sauce-1__1);
+  border-color: var(--color__sauce-1__2);
+}
+
+.sauce-packet--sauce-1 .sauce-packet__message:focus ~ .sauce-packet-background {
+  stroke: var(--color__sauce-1__2);
+}
+
+.sauce-packet--sauce-2 {
+  background: var(--color__sauce-2__1);
+  border-color: var(--color__sauce-2__2);
+}
+
+.sauce-packet--sauce-2 .sauce-packet__message:focus ~ .sauce-packet-background {
+  stroke: var(--color__sauce-2__2);
+}
+
+.sauce-packet--sauce-3 {
+  background: var(--color__sauce-3__1);
+  border-color: var(--color__sauce-3__2);
+}
+
+.sauce-packet--sauce-3 .sauce-packet__message:focus ~ .sauce-packet-background {
+  stroke: var(--color__sauce-3__2);
+}
+
+.sauce-packet--sauce-4 {
+  background: var(--color__sauce-4__1);
+  border-color: var(--color__sauce-4__2);
+}
+
+.sauce-packet--sauce-4 .sauce-packet__message:focus ~ .sauce-packet-background {
+  stroke: var(--color__sauce-4__2);
+}
+
+.sauce-packet--sauce-4 .sauce-packet__ingredients {
+  color: var(--color__white);
+}
+
+.sauce-packet--sauce-5 {
+  background: var(--color__sauce-5__1);
+  border-color: var(--color__sauce-5__2);
+}
+
+.sauce-packet--sauce-5 .sauce-packet__message:focus ~ .sauce-packet-background {
+  stroke: var(--color__sauce-5__2);
+}
+
+.sharing-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sharing-links li {
+  margin-bottom: 0.5rem;
+}
+
+.sharing-links li:last-child {
+  margin-bottom: 0;
+}
+
+.sharing-links__link, .sharing-links__link:visited {
+  color: var(--color__white);
+}
+
+.sharing-links__message {
+
+}
+
+.sharing-links__copy-link {
+  display: none;
+  height: 0;
+  width: 0;
+  border: 0;
+}
+
+.flavor-selector {
+  /* width: 20%;
+  display: inline-block; */
+}
+
+.flavor-selector__circle {
+  display: inline-block;
+  background-color: var(--color__placeholder);
+  border: solid 5px var(--color__placeholder);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+
+.flavor-selector--sauce-1 .flavor-selector__circle {
+  background-color: var(--color__sauce-1__1);
+  border-color: var(--color__sauce-1__1);
+}
+
+.flavor-selector--sauce-2 .flavor-selector__circle {
+  background-color: var(--color__sauce-2__1);
+  border-color: var(--color__sauce-2__1);
+}
+
+.flavor-selector--sauce-3 .flavor-selector__circle {
+  background-color: var(--color__sauce-3__1);
+  border-color: var(--color__sauce-3__1);
+}
+
+.flavor-selector--sauce-4 .flavor-selector__circle {
+  background-color: var(--color__sauce-4__2);
+  border-color: var(--color__sauce-4__2);
+}
+
+.flavor-selector--sauce-5 .flavor-selector__circle {
+  background-color: var(--color__sauce-5__1);
+  border-color: var(--color__sauce-5__1);
+}
+
+.flavor-selector__circle:hover {
+  cursor: pointer;
+}
+
+.flavor-selector__input:checked ~ .flavor-selector__circle {
+  border-color: var(--color__white);
+}
+
+.flavor-selector__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+fieldset {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  padding: 10px;
+  border: solid 5px var(--color__white);
+}
+
+legend {
+  padding: 0 10px;
+}

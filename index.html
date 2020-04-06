@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Saucy Messages
+    </title>
+    <meta name="description" content="Sauce packet message generator.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Oswald:700&display=swap" rel="stylesheet">
+
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <!-- Intro? -->
+      <h1>
+        Saucey Messages
+      </h1>
+
+      <!-- Sauce Packet -->
+      <div class="sauce-packet">
+        <div class="sauce-packet__content-container">
+          <h2 class="sauce-packet__title">
+            Mild
+          </h2>
+          <div class="sauce-packet__message-wrapper">
+            <p class="sauce-packet__message" contentEditable>
+              Write your saucey message here ;P
+            </p>
+            <svg class="sauce-packet-background sauce-packet-background--sauce-1"><g><path d="M220,92c0,25.38,11.28,46.1-4,64c-18.8,22.03-77.93,21.46-108,13c-32-9-77.85,16.32-96,0 c-20.87-18.76-7-68-3-82.5C16.69,58.61-11.87,26.76,9,8c18.15-16.32,105,3,130,3c30.28,0,58.24-13.87,77,7 C232.32,36.15,220,65.67,220,92z"/></g></svg>
+          </div>
+          <p class="sauce-packet__ingredients">
+            <strong>Ingredients:</strong> Some kind of river water, tobacco, chilli pepper scraps, beef stroganoff can rust, Y2K prepper packaged tomatoes, basil.
+          </p>
+        </div>
+      </div>
+
+      <!-- Flavor Selector -->
+      <form class="element-space text-center">
+        <fieldset>
+          <legend>
+            Sauce packet options:
+          </legend>
+          <label class="flavor-selector flavor-selector--sauce-1">
+            <input type="radio" id="sauce-1" class="flavor-selector__input" name="sauce-options" value="0">
+            <span class="flavor-selector__circle"></span>
+          </label>
+          <label class="flavor-selector flavor-selector--sauce-2">
+            <input type="radio" id="sauce-2" class="flavor-selector__input" name="sauce-options" value="1">
+            <span class="flavor-selector__circle"></span>
+          </label>
+          <label class="flavor-selector flavor-selector--sauce-3">
+            <input type="radio" id="sauce-3" class="flavor-selector__input" name="sauce-options" value="2">
+            <span class="flavor-selector__circle"></span>
+          </label>
+          <label class="flavor-selector flavor-selector--sauce-4">
+            <input type="radio" id="sauce-4" class="flavor-selector__input" name="sauce-options" value="3">
+            <span class="flavor-selector__circle"></span>
+          </label>
+          <label class="flavor-selector flavor-selector--sauce-5">
+            <input type="radio" id="sauce-5" class="flavor-selector__input" name="sauce-options" value="4">
+            <span class="flavor-selector__circle"></span>
+          </label>
+        </fieldset>
+      </form>
+
+      <!-- Sharing Options -->
+      <form class="element-space text-center">
+        <fieldset>
+          <legend>
+            Sharing:
+          </legend>
+          <ul class="sharing-links text-left">
+            <li>
+              <a href="" class="sharing-links__link sharing-links__copy">
+                Copy link to your saucey message
+              </a>
+              <textarea class="sharing-links__copy-link" value=""></textarea>
+            </li>
+            <li>
+              <a href="https://twitter.com/intent/tweet?url=https://ndiesslin.com&text=Checkout this sacey message generator!" class="sharing-links__link twitter-share-button">
+                Share this site on Twitter
+              </a>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+
+      <!-- Colophon -->
+      <!-- <form class="element-space">
+        <fieldset>
+          <legend>
+            What is this?:
+          </legend>
+          <p>
+            This site was created from the mind of <a href="https://ndiesslin.com">Nicholas Diesslin</a>, when looking at Taco Bell's sauce packets, he thought it would be great to create your own to send to people.
+          </p>
+        </fieldset>
+      </form> -->
+
+      <footer>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+          window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+          ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+      </footer>
+    </div>
+  </body>
+</html>
