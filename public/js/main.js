@@ -67,19 +67,9 @@ var saveMessageToUrl = function(){
 
   // Add flavor to share url
   url.searchParams.set('flavor', currentFlavor);
-  console.log(url);
 
-  // Add meta theme color to url
-  var metaThemeColor = document.querySelector("meta[name=theme-color]").content;
-  url.searchParams.set('theme-color', metaThemeColor);
-
-  // Set url with values, we won't use the actual link
-  //document.querySelector('.sharing-links__copy').href = url;
-
+  // Set copy link value
   document.querySelector('.sharing-links__copy-link').value = url;
-
-  // Set url in window and history this is a nightmare
-  //window.history.pushState('flavorchange', 'Title', url);
 }
 
 // Get url params
