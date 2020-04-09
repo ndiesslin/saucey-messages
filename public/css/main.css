@@ -232,8 +232,34 @@ a {
   margin-bottom: 0;
 }
 
+.sharing-links__link {
+  padding: 0.5rem;
+  background: var(--color__white);
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  border: solid 5px var(--color__white);
+}
+
+.sharing-links__link:last-child {
+  margin: 0;
+}
+
 .sharing-links__link, .sharing-links__link:visited {
-  color: var(--color__white);
+  color: var(--color__black);
+}
+
+.sharing-links__link:hover, .sharing-links__link:focus {
+  outline: 0;
+  border-color: var(--color__sauce-1__1);
+}
+
+.sharing-links__copy-message {
+  margin-bottom: 0.25rem;
+  display: none;
+  color: var(--color__sauce-2__2);
 }
 
 .sharing-links__message {

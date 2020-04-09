@@ -144,5 +144,19 @@ var copyLinkToClipboard = function(){
   copyText.style.display = 'none';
 
   // Alert the copied text
-  alert('Url to saucey message copied to clipboard');
+  var element = document.querySelector('.sharing-links__copy-message');
+  alertMessage(element);
+}
+
+var alertMessage = function(element){
+  // Show element
+  element.style.display = 'block';
+
+  // Hide element
+  setTimeout(
+    function(){ 
+      element.style.display = 'none' 
+    }, 
+    3000
+  );
 }
