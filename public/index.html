@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <title>
@@ -7,19 +7,12 @@
     </title>
     <meta name="description" content="Sauce packet message generator.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
+    <link href='favicon.ico' rel='icon' type='image/x-icon'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Oswald:700&display=swap" rel="stylesheet">
-
     <meta name="theme-color" content="#fafafa">
   </head>
-
   <body>
     <div class="content-wrapper">
       <!-- Intro? -->
@@ -51,23 +44,23 @@
           <legend>
             Sauce packet options:
           </legend>
-          <label class="flavor-selector flavor-selector--sauce-1">
+          <label class="flavor-selector flavor-selector--sauce-1" aria-label="Mild">
             <input type="radio" id="sauce-1" class="flavor-selector__input" name="sauce-options" value="0">
             <span class="flavor-selector__circle"></span>
           </label>
-          <label class="flavor-selector flavor-selector--sauce-2">
+          <label class="flavor-selector flavor-selector--sauce-2" aria-label="Hot">
             <input type="radio" id="sauce-2" class="flavor-selector__input" name="sauce-options" value="1">
             <span class="flavor-selector__circle"></span>
           </label>
-          <label class="flavor-selector flavor-selector--sauce-3">
+          <label class="flavor-selector flavor-selector--sauce-3" aria-label="Fire">
             <input type="radio" id="sauce-3" class="flavor-selector__input" name="sauce-options" value="2">
             <span class="flavor-selector__circle"></span>
           </label>
-          <label class="flavor-selector flavor-selector--sauce-4">
+          <label class="flavor-selector flavor-selector--sauce-4" aria-label="Diablo">
             <input type="radio" id="sauce-4" class="flavor-selector__input" name="sauce-options" value="3">
             <span class="flavor-selector__circle"></span>
           </label>
-          <label class="flavor-selector flavor-selector--sauce-5">
+          <label class="flavor-selector flavor-selector--sauce-5" aria-label="Wild">
             <input type="radio" id="sauce-5" class="flavor-selector__input" name="sauce-options" value="4">
             <span class="flavor-selector__circle"></span>
           </label>
@@ -96,22 +89,10 @@
           </ul>
         </fieldset>
       </form>
-
-      <!-- Colophon -->
-      <!-- <form class="element-space">
-        <fieldset>
-          <legend>
-            What is this?:
-          </legend>
-          <p>
-            This site was created from the mind of <a href="https://ndiesslin.com">Nicholas Diesslin</a>, when looking at Taco Bell's sauce packets, he thought it would be great to create your own to send to people.
-          </p>
-        </fieldset>
-      </form> -->
-
+  
+      <!-- Footer -->
       <footer>
         <script src="js/main.js"></script>
-
         <!-- Google Analytics -->
         <script>
           window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
