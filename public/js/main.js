@@ -125,7 +125,16 @@ var message = (function() {
     var flavor = urlVariables['flavor'];
 
     if (message === 'undefined') { 
-      message = 'Write your saucey message here ;P'; 
+      // Set list of random messages if no message is defined
+      var randomMessages = [
+        "Write your saucey message here ;P",
+        "You look nice!",
+        "I'm not saying this looks like Taco Bell sauce.",
+        "Okay this looks a little bit like Taco Bell sauce."
+      ];
+
+      // Get a random message for our message
+      message = getRandomArrayValue(randomMessages); 
     }
 
     // Set message
@@ -133,6 +142,10 @@ var message = (function() {
 
     // Click our flavor
     clickFlavor(flavor);
+  }
+
+  var getRandomArrayValue = function(array) {
+    return array[Math.floor(Math.random()*array.length)];
   }
 
   // Get url params
