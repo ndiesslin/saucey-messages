@@ -42,6 +42,10 @@ a {
   color: var(--color__white);
 }
 
+.display-block {
+  display: block !important;
+}
+
 .element-space {
   margin-bottom: var(--sizing-16);
 }

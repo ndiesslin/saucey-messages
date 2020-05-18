@@ -79,8 +79,8 @@ var clickHandler = (function() {
     // Get the text field
     var copyText = document.querySelector('.sharing-links__copy-link');
 
-    // Set display to block so link can be copied
-    copyText.style.display = 'block';
+    // Add display block class so link can be copied
+    copyText.classList.add('display-block');
 
     // Select the text field
     copyText.select();
@@ -89,8 +89,8 @@ var clickHandler = (function() {
     // Copy the text inside the text field
     document.execCommand('copy');
 
-    // Set display to none so nothing is visible to the user for the copy link
-    copyText.style.display = 'none';
+    // Remove display block class so nothing is visible to the user for the copy link
+    copyText.classList.remove('display-block');
   }
 
   // Exposed functions
@@ -181,14 +181,16 @@ var alertMessage = (function() {
 
   // Show element
   var showElement = function() {
-    element.style.display = 'block';
+    // Add display block class to show message
+    element.classList.add('display-block');
   }
 
   // Hide element after time
   var triggerHide = function() {
     setTimeout(
       function(){ 
-        element.style.display = 'none' 
+        // Remove display block class to hide message
+        element.classList.remove('display-block');
       }, 
       3000
     );
